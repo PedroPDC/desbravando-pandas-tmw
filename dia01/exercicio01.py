@@ -9,8 +9,8 @@ import pandas as pd
 
 dados = [10, 20, 42, 9, 12, 35, 24, 10, 8, 14, 21]
 
-df = pd.Series(dados)
+series_dados = pd.Series(dados)
 
-print(f"Média: {df.describe()["mean"]}")
-print(f"Desvio padrão: {df.describe()["std"]}")
-print(f"Máximo Valor: {df.describe()["max"]}")
+print(f"Média: {series_dados.describe()["mean"]}")
+print(f"Desvio padrão: {series_dados.describe()["std"]}")
+print(f"Máximo Valor: {series_dados.describe()["max"]}")
