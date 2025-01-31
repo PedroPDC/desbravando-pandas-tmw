@@ -13,8 +13,9 @@ dados = {
 }
 
 df = pd.DataFrame(dados)
-sumario = df.describe()
 
-print(sumario)
-print(f"\n\nMédia de idades: {sumario["idade"]["mean"]}")
+print(df["nome"].describe())
+print(f"\n\nMédia de idades: {df["idade"].mean()}")
 print(f"Último nome: {df["nome"].iloc[-1]}")
+
+# print(df["nome"].tail(1)) tambem funcionaria no ultimo nome
